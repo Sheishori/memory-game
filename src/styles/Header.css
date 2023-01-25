@@ -2,5 +2,9 @@ header {
 	text-align: center;
 	padding: 1rem;
 	font-family: 'Six Caps', Roboto;
-	font-size: 2rem;
+	font-size: 2.5rem;
+	color: white;
+	background-image: url(../assets/bg.jpg);
+	background-repeat: repeat;
+	background-size: 15rem;
 }
