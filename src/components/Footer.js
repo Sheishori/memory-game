@@ -8,8 +8,8 @@ export default function Footer() {
 			<a href='https://github.com/Sheishori'>
 				<svg
 					viewBox='0 0 100 100'
-					height='1.5em'
-					width='1.5em'
+					height='1em'
+					width='1em'
 					xmlns='http://www.w3.org/2000/svg'
 				>
 					<path
