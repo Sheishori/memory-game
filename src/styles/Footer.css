@@ -1,0 +1,13 @@
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+footer div {
+	display: inline;
+}
+
+footer svg {
+	vertical-align: middle;
+}
