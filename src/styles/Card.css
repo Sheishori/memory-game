@@ -1,7 +1,24 @@
 .card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'DotGothic16', monospace;
+	font-size: 1.3rem;
+	color: white;
 	background-color: #254092;
 	border: 0.2rem solid rgb(211, 211, 211);
 	box-shadow: 0rem 0.1rem 0.1rem 0.1rem rgb(128, 128, 128);
 	height: 15rem;
 	width: 12rem;
+	padding: 0.9rem;
+}
+
+.card img {
+	width: 10rem;
+	height: 10rem;
+	object-fit: contain;
+}
+
+.card div {
+	margin-top: 0.5rem;
 }
