@@ -6,7 +6,20 @@ export default function Main() {
 	return (
 		<main>
 			<h2>Click on each card once to gain points!</h2>
-			<Card />
+			<div id='gameboard'>
+				<Card />
+				<Card />
+				<Card />
+				<Card />
+				<Card />
+				<Card />
+				<Card />
+				<Card />
+				<Card />
+				<Card />
+				<Card />
+				<Card />
+			</div>
 		</main>
 	);
 }

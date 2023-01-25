@@ -2,3 +2,15 @@ main {
 	text-align: center;
 	font-size: 1.5rem;
 }
+
+main h2 {
+	margin: 1rem;
+}
+
+main #gameboard {
+	display: grid;
+	grid-template-columns: repeat(6, auto);
+	grid-template-rows: auto auto;
+	justify-content: center;
+	gap: 1rem;
+}
