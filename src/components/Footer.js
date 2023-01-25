@@ -6,7 +6,12 @@ export default function Footer() {
 		<footer>
 			<div>Ⓒ Sheishori</div>
 			<a href='https://github.com/Sheishori'>
-				<svg width='98' height='96' xmlns='http://www.w3.org/2000/svg'>
+				<svg
+					viewBox='0 0 100 100'
+					height='1.5em'
+					width='1.5em'
+					xmlns='http://www.w3.org/2000/svg'
+				>
 					<path
 						fill-rule='evenodd'
 						clip-rule='evenodd'
