@@ -3,7 +3,7 @@ import Main from './components/Main';
 import Footer from './components/Footer';
 import './styles/App.css';
 
-function App() {
+export default function App() {
 	return (
 		<div id='App'>
 			<Header />
@@ -12,5 +12,3 @@ function App() {
 		</div>
 	);
 }
-
-export default App;
