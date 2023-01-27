@@ -14,7 +14,7 @@ import mandragora from '../assets/Mandragora.png';
 import moogle from '../assets/Moogle.png';
 import tonberry from '../assets/Tonberry.png';
 
-export default function Main() {
+export default function Main({ scoreData }) {
 	const [cardData, setCardData] = useState([
 		{
 			src: adamantoise,
@@ -73,14 +73,23 @@ export default function Main() {
 
 	useEffect(() => {
 		shuffleCards();
-	}, []);
+	}, [scoreData.score]);
+
+	function handleLogic() {
+		scoreData.setScore(scoreData.score + 1);
+	}
 
 	return (
 		<main>
 			<h2>Click on each card once to gain points!</h2>
 			<div id='gameboard'>
 				{cardData.map((card) => (
-					<Card key={card.name} src={card.src} name={card.name} />
+					<Card
+						key={card.name}
+						src={card.src}
+						name={card.name}
+						handleLogic={handleLogic}
+					/>
 				))}
 			</div>
 		</main>

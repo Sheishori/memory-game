@@ -18,7 +18,7 @@ export default function App() {
 	return (
 		<div id='App'>
 			<Header scoreData={scoreData} />
-			<Main />
+			<Main scoreData={scoreData} />
 			<Footer />
 		</div>
 	);

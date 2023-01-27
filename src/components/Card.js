@@ -3,7 +3,7 @@ import '../styles/Card.css';
 
 export default function Card(props) {
 	return (
-		<div className='card'>
+		<div className='card' onClick={props.handleLogic}>
 			<img src={props.src} alt={props.name} />
 			<div>{props.name}</div>
 		</div>
