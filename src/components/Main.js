@@ -76,7 +76,9 @@ export default function Main({ scoreData }) {
 		shuffleCards();
 	}, [score]);
 
-	function handleLogic() {
+	const [clickedCards, setClickedCards] = useState([]);
+
+	function handleLogic(name) {
 		setScore(score + 1);
 	}
 
