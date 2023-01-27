@@ -80,6 +80,7 @@ export default function Main({ scoreData }) {
 
 	function handleLogic(name) {
 		if (alreadyClicked.find((card) => card === name)) {
+			if (bestScore < score) setBestScore(score);
 			setScore(0);
 			setAlreadyClicked([]);
 		} else {
