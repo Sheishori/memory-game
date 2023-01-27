@@ -1,11 +1,11 @@
 import React from 'react';
 import '../styles/Card.css';
 
-export default function Card(props) {
+export default function Card({ src, name, handleLogic }) {
 	return (
-		<div className='card' onClick={props.handleLogic.bind(this, props.name)}>
-			<img src={props.src} alt={props.name} />
-			<div>{props.name}</div>
+		<div className='card' onClick={handleLogic.bind(this, name)}>
+			<img src={src} alt={name} />
+			<div>{name}</div>
 		</div>
 	);
 }
