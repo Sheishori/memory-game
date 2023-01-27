@@ -76,10 +76,16 @@ export default function Main({ scoreData }) {
 		shuffleCards();
 	}, [score]);
 
-	const [clickedCards, setClickedCards] = useState([]);
+	const [alreadyClicked, setAlreadyClicked] = useState([]);
 
 	function handleLogic(name) {
-		setScore(score + 1);
+		if (alreadyClicked.find((card) => card === name)) {
+			setScore(0);
+			setAlreadyClicked([]);
+		} else {
+			setScore(score + 1);
+			setAlreadyClicked(alreadyClicked.concat(name));
+		}
 	}
 
 	return (
