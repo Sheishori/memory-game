@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.19e1ded2.css",
+    "main.js": "/static/js/main.301d345d.js",
+    "static/media/bg.jpg": "/static/media/bg.13da5852205aee4e170f.jpg",
+    "static/media/Tonberry.png": "/static/media/Tonberry.2e4b0e0b242364e0fcb9.png",
+    "static/media/Flan.png": "/static/media/Flan.8a8f85aeb44e377a70ea.png",
+    "static/media/Adamantoise.png": "/static/media/Adamantoise.02f361dc998097317ae6.png",
+    "static/media/Bomb.png": "/static/media/Bomb.3f0d436aa4254b5d83ad.png",
+    "static/media/Moogle.png": "/static/media/Moogle.6b4439b68f002b82ece1.png",
+    "static/media/Behemoth.png": "/static/media/Behemoth.38eb0830323501d07090.png",
+    "static/media/Malboro.png": "/static/media/Malboro.b57cef4c1b0cbc4e235a.png",
+    "static/media/Ahriman.png": "/static/media/Ahriman.1edbfa06294df4425fcf.png",
+    "static/media/Coeurl.png": "/static/media/Coeurl.757bfc344c42dc182a33.png",
+    "static/media/Chocobo.png": "/static/media/Chocobo.6fbceb352cd3dd1fd4ce.png",
+    "static/media/Mandragora.png": "/static/media/Mandragora.168581f580bfcfb1b702.png",
+    "index.html": "/index.html",
+    "main.19e1ded2.css.map": "/static/css/main.19e1ded2.css.map",
+    "main.301d345d.js.map": "/static/js/main.301d345d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19e1ded2.css",
+    "static/js/main.301d345d.js"
+  ]
+}
