@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from './Card';
 import '../styles/Main.css';
 import adamantoise from '../assets/Adamantoise.png';
@@ -65,6 +65,15 @@ export default function Main() {
 			name: 'Tonberry',
 		},
 	]);
+
+	function shuffleCards() {
+		const cards = [...cardData];
+		setCardData(cards.sort(() => Math.random() - 0.5));
+	}
+
+	useEffect(() => {
+		shuffleCards();
+	}, []);
 
 	return (
 		<main>
