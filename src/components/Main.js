@@ -65,22 +65,14 @@ export default function Main() {
 			name: 'Tonberry',
 		},
 	]);
+
 	return (
 		<main>
 			<h2>Click on each card once to gain points!</h2>
 			<div id='gameboard'>
-				<Card src={cardData[0].src} name={cardData[0].name} />
-				<Card src={cardData[1].src} name={cardData[1].name} />
-				<Card src={cardData[2].src} name={cardData[2].name} />
-				<Card src={cardData[3].src} name={cardData[3].name} />
-				<Card src={cardData[4].src} name={cardData[4].name} />
-				<Card src={cardData[5].src} name={cardData[5].name} />
-				<Card src={cardData[6].src} name={cardData[6].name} />
-				<Card src={cardData[7].src} name={cardData[7].name} />
-				<Card src={cardData[8].src} name={cardData[8].name} />
-				<Card src={cardData[9].src} name={cardData[9].name} />
-				<Card src={cardData[10].src} name={cardData[10].name} />
-				<Card src={cardData[11].src} name={cardData[11].name} />
+				{cardData.map((card) => (
+					<Card key={card.name} src={card.src} name={card.name} />
+				))}
 			</div>
 		</main>
 	);
