@@ -15,6 +15,7 @@ import moogle from '../assets/Moogle.png';
 import tonberry from '../assets/Tonberry.png';
 
 export default function Main({ scoreData }) {
+	const { score, setScore, bestScore, setBestScore } = scoreData;
 	const [cardData, setCardData] = useState([
 		{
 			src: adamantoise,
@@ -73,10 +74,10 @@ export default function Main({ scoreData }) {
 
 	useEffect(() => {
 		shuffleCards();
-	}, [scoreData.score]);
+	}, [score]);
 
 	function handleLogic() {
-		scoreData.setScore(scoreData.score + 1);
+		setScore(score + 1);
 	}
 
 	return (
