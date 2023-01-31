@@ -1,4 +1,5 @@
 .card {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -21,4 +22,15 @@
 
 .card div {
 	margin-top: auto;
+}
+
+.card:hover {
+	background: linear-gradient(#6d81bd, #254092);
+}
+
+.card:hover::before {
+	content: url(../assets/pointer.png);
+	position: absolute;
+	left: -2rem;
+	top: 1rem;
 }
